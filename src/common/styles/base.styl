@@ -1,0 +1,16 @@
+body,html
+	line-height:1
+	font-weight:200
+	font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial
+.clearfix
+	display:inline-block
+	&:after
+		display:block
+		content:''
+		height:0
+		line-height:0
+@media(-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+	.border-1px
+		&::after
+			-webkit-transform:scaleY(0.3)
+			transform:scaleY(0.3)
